@@ -70,7 +70,7 @@ app.get('/weather', (req, res) => {
         res.send({
           ciudad: req.query.address,
           clima: forecastData,
-          location,
+          location: location,
         });
       });
     }

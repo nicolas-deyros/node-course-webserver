@@ -22,8 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
         msj1.textContent = data.error;
       } else {
         msj1.textContent = data.location;
-        msj2.textContent = data.clima.tiempo;
-        console.log(data.clima.tiempo);
+        msj2.textContent = `Son las ${data.clima.hora} hace una temperatura de ${data.clima.temperatura}, humedad del ${data.clima.humedad}`;
       }
     });
   });

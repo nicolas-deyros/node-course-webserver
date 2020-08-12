@@ -17,7 +17,9 @@ const forecast = (latitude, longitude, callback) => {
         undefined
       );
     } else {
+      console.log(body.current.weather_descriptions);
       callback(undefined, {
+        humedad: body.current.humidity,
         tiempo: body.current.weather_descriptions,
         hora: body.current.observation_time,
         temperatura: body.current.temperature,
